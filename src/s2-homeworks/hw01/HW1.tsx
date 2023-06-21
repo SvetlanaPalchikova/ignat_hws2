@@ -27,27 +27,29 @@ type MessagesType = {
     text: string
     time: string
 }
+const hours: string = (new Date().getHours()).toString();
+const minutes: string = (new Date().getMinutes()).toString();
 // структуру объекта не менять
 export const message0: MessageType = {
     id: 0,
     user: {
         avatar: avatar, // можно менять
-        name: 'Some Name',  // можно менять
+        name: 'Svetlana',  // можно менять
     },
     message: {
-        text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
-        time: '22:00', // можно менять
+        text: 'Hi!', // можно менять
+        time: `${hours}:${minutes}`, // можно менять
     },
 }
 export const friendMessage0: MessageType = {
     id: 100,
     user: {
         avatar: avatar, // можно менять
-        name: 'Friend Name', // можно менять
+        name: 'Joni', // можно менять
     },
     message: {
-        text: 'зеркальное сообщение для тренировки css', // можно менять
-        time: '22:00', // можно менять
+        text: 'Hello!', // можно менять
+        time:`${hours}:${minutes}`, // можно менять
     },
 }
 
